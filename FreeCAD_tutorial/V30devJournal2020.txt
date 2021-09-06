@@ -1,0 +1,50 @@
+Jak naložit s domem se zahradou ve Věcově?
+==========================================
+20200812 St
+V kontextu rodinných napnelismů mám vnuknutí prodat dům ve Věcově, třeba i s věcným břemenem.
+Stahuji Ebbok-82-věcí.pdf (které musíte udělat, aby prodej nemovitosti neskončil fiaskem, autor Lukáš Hrdina, www.realitnikonzultace.cz
+
+20200824 Po
+Při hledání spoluinvestora navštěvuji stránky https://www.simplydevelopment.cz/.
+Odesílám stručný dotaz na možnou spolupráci panu Patřičnému na info@simplyshort.cz.
+
+20200825 Út
+Rozhodnutí o dalším osudu rodinného domu ve Věcově je příležitostí k praktikování dovedností DeByDe a FrancisD!
+Seznam Zprávy publikovaly 0821 článek https://www.seznamzpravy.cz/clanek/je-to-jista-investice-uverily-desitky-lidi-ted-nevedi-kde-miliony-skoncily-114601. Viz též https://www.salia-group.eu/. Tudy cesta nevede.
+Večer bezvýsledně hledám inspiraci na internetu. Pročítám i územní plán obce Věcov.
+
+20200826 St
+Při hledání optimálního využití domu mohou pomoci architektonické vzorce - design patterns. Je třeba najít různé účely využití stavby a pozemku a následně vyhodnotit potenciální zájem.
+K vyhodnocení je třeba součinnost s odborníky, viz třeba https://www.ateliervltava.cz/cs/kontakt.
+
+Pražské usedlosti. Možnosti obnovy a využití
+https://vskp.vse.cz/44238_prazske-usedlosti-moznosti-obnovy-a-vyuziti
+file:///C:/Users/straka/Downloads/zaverecna_prace.pdf
+-> Diplomová práce z roku 2014 odpovídající na otázku, kterou si kladu, i když spíš procesně než věcně.
+Viz též Konverze venkovské usedlosti ve vysoké (spíše grafická práce)
+https://www.fa.cvut.cz/galerie/diplomove-prace/2018-1-curinova-konverze-venkovske-usedlosti-ve-vysoke-73164/f5-dp-2018-curinova-helena-priloha-portfolio-dp.pdf
+nebo
+Možnosti a problémy revitalizace venkovských brownfields v Jihočeském kraji
+file:///C:/Users/straka/Downloads/DPTX_2015_1_11310_0_485821_0_82015.pdf
+
+Výstižné shrnutí možností - Stodola, statek, usedlost
+Katedra urbanismu a územního plánování Fakulta stavební ČVUT v Praze
+http://www.uzemi.eu/vystupy/brownfieldy-typy/-2-stodola-statek-usedlost.html
+
+Vyhledávání "možnosti revitalizace usedlosti"
+
+20200828 Pá
+Z KN získávám půdorys stavební parcely včetně rozměrů jako základ pro modelování.
+Na Bezrealitky.cz počítám odhad prodejní ceny, který vychází 10 mil. Kč.
+Podle https://kalkulacky.idnes.cz/kalkulacky.aspx?typ=ekonomicke-najemne
+to odpovídá nájmu 43 tis. Kč měsíčně při 4% míře kapitalizace (v případě bytu vychází se stejnými parametry nájem 9 tis. Kč).
+Nabídka pronájmu více odpovídá mé vlastnické strategii (ve srovnání s prodejem).
+
+20200902 St
+Od Po mám dovolenou. Učím se používat FreeCAD pro tvorbu modelu stavby. Pročítám technickou zprávu z dokumentace pro stavební řízení k domu v Jenči. Seznamuji se s vyhláškou o požadavcích na stavby. Přenáším do WorkFlowy přehled Pattern Language. Zkouším pomocí nástroje měření v Katastru nemovitostí odhadnout rozměry stavby, přitom přemýšlím o algoritmu modelování stavby a sestavení nabídky pronájmu.
+
+20200906 Ne
+Z Věcova vezu pár výkresů a v Jenči odvozuji body a úsečky jako východisko pro půdorys prvního podlaží. V Po zkouším práci s Python konzolí ve FreeCAD.
+
+20201212 So
+Testuji v Pythonu objekty usnadňující tvorbu komponent metodou tvorby kostičky a jejího posunu do cílové pozice s možností add and remove.

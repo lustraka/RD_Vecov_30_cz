@@ -1,0 +1,68 @@
+import FreeCAD, Draft, Arch
+
+zv = 0
+# Obvodove zdi
+wl = [650, 650, 650, 650, 600, 300]
+hv = 2500
+pl = [FreeCAD.Vector(0, 0, zv),
+FreeCAD.Vector(0, 7700, zv),
+FreeCAD.Vector(10250, 7700, zv),
+FreeCAD.Vector(10250, -5450, zv),
+FreeCAD.Vector(3250, -5450, zv),
+FreeCAD.Vector(3250, 0, zv),
+FreeCAD.Vector(3250+wl[4], 0, zv)]
+
+ll = [Draft.makeLine(pl[0], pl[1]),
+Draft.makeLine(pl[1], pl[2]),
+Draft.makeLine(pl[2], pl[3]),
+Draft.makeLine(pl[3], pl[4]),
+Draft.makeLine(pl[4], pl[5]),
+Draft.makeLine(pl[6], pl[0])]
+
+
+wal = [Arch.makeWall(ll[0], length=None, width=wl[0], height=hv, align="Left", name='Anp1o'),
+Arch.makeWall(ll[1], length=None, width=wl[1], height=hv, align='Left', name='Anp1o_w1'),
+Arch.makeWall(ll[2], length=None, width=wl[2], height=hv, align='Left', name='Anp1o_w2'),
+Arch.makeWall(ll[3], length=None, width=wl[3], height=hv, align='Left', name='Anp1o_w3'),
+Arch.makeWall(ll[4], length=None, width=wl[4], height=hv, align='Left', name='Anp1o_w4'),
+Arch.makeWall(ll[5], length=None, width=wl[5], height=hv, align='Left', name='Anp1o_w5')]
+
+Anp1o = wal[0]
+Arch.addComponents(wal[1:], Anp1o)
+
+# Pricky - komora, koupelna, WC
+wl = [150, 300, 100, 100, 100, 100]
+hv = 2500
+pl = [
+FreeCAD.Vector(3850, 7700, zv),
+FreeCAD.Vector(3850, 0, zv),
+FreeCAD.Vector(3850, 1800, zv),
+FreeCAD.Vector(0, 1800, zv),
+FreeCAD.Vector(2150, 1800, zv),
+FreeCAD.Vector(2150, 3600, zv),
+FreeCAD.Vector(3850, 3600, zv),
+FreeCAD.Vector(3850, 5500, zv),
+FreeCAD.Vector(2150, 5500, zv),
+FreeCAD.Vector(2150, 7700, zv)
+]
+ll = [
+Draft.makeLine(pl[0], pl[1]),
+Draft.makeLine(pl[2], pl[3]),
+Draft.makeLine(pl[4], pl[5]),
+Draft.makeLine(pl[5], pl[6]),
+Draft.makeLine(pl[7], pl[8]),
+Draft.makeLine(pl[8], pl[9]),
+]
+wal = [
+Arch.makeWall(ll[0], length=None, width=wl[0], height=hv, align="Left", name='Anp1p1'),
+Arch.makeWall(ll[1], length=None, width=wl[1], height=hv, align='Left', name='Anp1p1_w1'),
+Arch.makeWall(ll[2], length=None, width=wl[2], height=hv, align='Left', name='Anp1p1_w2'),
+Arch.makeWall(ll[3], length=None, width=wl[3], height=hv, align='Left', name='Anp1p1_w3'),
+Arch.makeWall(ll[4], length=None, width=wl[4], height=hv, align='Left', name='Anp1p1_w4'),
+Arch.makeWall(ll[5], length=None, width=wl[5], height=hv, align='Left', name='Anp1p1_w5'),
+]
+Anp1p1 = wal[0]
+Arch.addComponents(wal[1:], Anp1p1)
+BuildingPart = Arch.makeBuildingPart([Anp1o, Anp1p1])
+
+FreeCAD.ActiveDocument.recompute()

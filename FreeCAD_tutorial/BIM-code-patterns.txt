@@ -1,0 +1,42 @@
+import FreeCAD, Draft, Arch
+
+zv = 0
+wl = [65, 65]
+hv = 250
+pl = [
+FreeCAD.Vector(0, 0, zv),
+FreeCAD.Vector(0, 500, zv),
+FreeCAD.Vector(1000, 500, zv),
+]
+ll = [
+Draft.makeLine(pl[0], pl[1]),
+Draft.makeLine(pl[1], pl[2]),
+]
+wal = [
+Arch.makeWall(ll[0], length=None, width=wl[0], height=hv, align="Left", name='Xnpo'),
+Arch.makeWall(ll[1], length=None, width=wl[1], height=hv, align="Left", name='Test_w1'),
+]
+
+Xnpo = wal[0]
+Arch.addComponents(wal[1:], Xnpo)
+
+zv = 0
+wl = [50, 50]
+hv = 250
+pl = [
+FreeCAD.Vector(1000, 500, zv),
+FreeCAD.Vector(1000, 0, zv),
+FreeCAD.Vector(0, 0, zv),
+]
+ll = [
+Draft.makeLine(pl[0], pl[1]),
+Draft.makeLine(pl[1], pl[2]),
+]
+wal = [
+Arch.makeWall(ll[0], length=None, width=wl[0], height=hv, align="Left", name='Test_w2'),
+Arch.makeWall(ll[1], length=None, width=wl[1], height=hv, align="Left", name='Test_w3'),
+]
+
+Arch.addComponents(wal, Xnpo)
+
+FreeCAD.ActiveDocument.recompute()

@@ -1,0 +1,37 @@
+Pronajímatel pronajímá nemovitost Věcov 30
+==========================================
+Za účelem pronájmu nemovitostí Věcov 30 jako pronajímatel
+mohu prezentovat dům s pomocí digitálního modelu.
+
+Za účelem sestavení digitálního modelu budovy jako expert
+mohu sladit postup (PS) a obsah (P) modelování.
+
+Za účelem hospodárného, efektivního a účelného postupu modelování budovy jako expert mohu
+- vyjasnit účel modelování a stanovit cíle sprintu,
+- ovládnout soustavu myšlenkově-životních operací v doméně modelování ve FreeCAD,
+- komponovat příběh celého sprintu,
+- interpretovat příběh celého sprintu,
+- ověřit dosažení cíle sprintu.
+
+Budova se skládá z částí (BuildingParts).
+Komponenty dané části mají svůj prefix
+Anp1 - Obytná část NP1
+Bnp1 - Veranda NP1
+Cnp1 - Stodola NP1
+Dnp1 - Kolna NP1
+Epp1 - Kotelna PP1
+
+Komponenty se skládájí ze sub-komponent, např.
+o - obvodové zdi
+p - příčky
+r - základová deska
+
+Pro konstrukci části slouží seznamy a hodnoty:
+_PL - point list
+_LL - line list
+_WL - wall's widht list
+_HV - wall's hight value
+_ZV - wall's zero level (z) value
+_wal - wall's list
+
+Aby vytvořily jeden celek, jsou jednotlivé zdi jsou přičteny k hostující zdi _host.
